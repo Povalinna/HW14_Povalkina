@@ -50,11 +50,11 @@ function doMath(){
 
     //3.Заповнення масиву
     function fillArray(){
-        var M = +prompt('Enter the array length');
-        var N = +prompt('Enter number of inner arrays ');
+        let M = +prompt('Enter the array length');
+        let N = +prompt('Enter number of inner arrays ');
        
           let arrM = []; // создаем пустой массив длины M
-        for (var i = 0; i < M; i++) {
+        for (let i = 0; i < M; i++) {
           let arrN = [];
           for (let j=0;j < N;j++) {
              arrN[j] = prompt('enter the number');}
@@ -64,12 +64,12 @@ function doMath(){
        
         //4.Функція видалення.
      function remuveElem(simb,res){
-        var simb = '';
+        let simb = '';
        simb = prompt(` input row`);
-      var arrMas =  Array.from(simb);
-        var res=[];
+      let arrMas =  Array.from(simb);
+        let res=[];
       res = prompt(`What characters to removу?`);
-        var arrNas =Array.from(res);
+        let arrNas =Array.from(res);
       for (let i=0;i<arrMas.length;i++){
           for (let j=0;j<res.length;j++)
        {if(arrMas[i] === res[j]){arrMas.splice([i],1);}
